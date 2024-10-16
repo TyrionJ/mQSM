@@ -1,0 +1,15 @@
+{
+    "modalities": {
+        "0": "QSM0",
+        "1": "T1"
+    },
+    "labels": {
+        "background": 0,
+        "Region1": 1
+    },
+    "groups": {
+        "QSM0": "ALL",
+        "T1": "ALL"
+    },
+    "numTraining": 50
+}
