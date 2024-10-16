@@ -13,16 +13,16 @@ else:
 def run_trainer():
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('-p', type=str, default=pf)
-    parser.add_argument('-r', type=str, default=rf)
-    parser.add_argument('-f', type=int, default=0)
-    parser.add_argument('-D', type=int, default=3)
+    parser.add_argument('-p', type=str, default=pf, help='Path to the processed data')
+    parser.add_argument('-r', type=str, default=rf, help='Path to the result data')
+    parser.add_argument('-f', type=int, default=0, help='Train fold')
+    parser.add_argument('-D', type=int, default=3, help='Dataset ID')
 
-    parser.add_argument('-b', type=int, default=2)
-    parser.add_argument('--c', action='store_true')
-    parser.add_argument('--v', action='store_true')
-    parser.add_argument('-d', type=str, default='0')
-    parser.add_argument('-e', type=int, default=3)
+    parser.add_argument('-b', type=int, default=2, help='Batch size')
+    parser.add_argument('--c', action='store_true', help='Continue training')
+    parser.add_argument('--v', action='store_true', help='Validation')
+    parser.add_argument('-d', type=str, default='0', help='GPU ID')
+    parser.add_argument('-e', type=int, default=3, help='Epochs')
     args = parser.parse_args()
 
     tr = NetTrainer(in_channels=2,
