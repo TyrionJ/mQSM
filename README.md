@@ -1,7 +1,7 @@
 # mQSM: Multitask Learning-based Quantitative Susceptibility Mapping for Iron Analysis in Brain
 
 ## Overview
-We provide the PyTorch implementation of our MICCAI-2024 submission ["mQSN"](https://doi.org/10.1007/978-3-031-72069-7_31).
+We provide the PyTorch implementation of our MICCAI-2024 submission ["mQSM"](https://doi.org/10.1007/978-3-031-72069-7_31).
 
 <img src="architecture.jpg" alt="mQSM architecture">
 
